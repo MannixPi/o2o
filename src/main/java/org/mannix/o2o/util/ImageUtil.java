@@ -74,7 +74,7 @@ public class ImageUtil {
 		String realFileParentPath = PathUtil.getImgBasePath() + targetAddr;
 		File dirPath = new File(realFileParentPath);
 		if (!dirPath.exists()) {
-			dirPath.mkdir();
+			dirPath.mkdirs();
 		}
 	}
 

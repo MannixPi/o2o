@@ -1,7 +1,7 @@
 package org.mannix.o2o.util;
 
 public class PathUtil {
-	private static String seperator = System.getProperty("file.seperator");
+	private static String separator = System.getProperty("file.separator");
 
 	public static String getImgBasePath() {
 		String os = System.getProperty("os.name");
@@ -11,12 +11,12 @@ public class PathUtil {
 		} else {
 			basePath = "/home/mannixpi/image/";
 		}
-		basePath = basePath.replace("/", seperator);
+		basePath = basePath.replace("/", separator);
 		return basePath;
 	}
 
 	public static String getShopImagePath(long shopId) {
-		String imagePath = "/upload/item/shop/" + shopId + "/";
-		return imagePath.replace("/", seperator);
+		String imagePath = "/upload/images/item/shop/" + shopId + "/";
+		return imagePath.replace("/", separator);
 	}
 }
